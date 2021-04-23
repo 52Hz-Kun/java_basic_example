@@ -44,4 +44,9 @@ public class Programmer extends Employee{
 
         return getDetials() + "\t程序员\t" + status.getNAME() + "\t\t\t\t\t" + equipment.getDescription();
     }
+
+    // 在开发团队列表里不再使用tiString方法，谢了个新方法调用，因为格式不同
+    public String getDetailsForTeam(){
+        return memberId + "/" + getId() + "\t" + getName() + "\t" + getAge() + "\t" + getSalary() + "\t程序员";
+    }
 }
