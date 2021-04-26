@@ -1,7 +1,5 @@
 package domain;
 
-import java.awt.*;
-
 public class PC implements Equipment{
     private String model; // 机器型号
     private String display; // 显示器名称
